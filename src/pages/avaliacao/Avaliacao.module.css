@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 50px;
+  height: 80vh;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.quadrado img {
+  width: 300px;
+  height: 450px;
+  box-shadow: 0px 0px 0px 10px #7a0cc3;
+}
+.quadrado {
+  grid-row: 1 / -1;
+}
+
+.avaliar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content;
+  justify-items: center;
+  gap: 10px;
+}
+
+.avaliar h2 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+  margin: 0;
+  /* max-width: 800px; */
+  overflow-wrap: break-word;
+  width: fit-content;
+  max-width: 12ch;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-column: 1;
+  gap: 10px;
+}
+
+.deslike img,
+.like img {
+  width: 74px;
+  height: 73px;
+}
+
+.deslike {
+  border-radius: 50%;
+  rotate: 180deg;
+  padding: 15px;
+  background: #9f0c73;
+  box-shadow: -2px -3px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.nosaw {
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  background: linear-gradient(to right, #9f0c73, #2f15a2);
+  color: white;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  box-shadow: 3px 4px 4px 3px rgba(0, 0, 0, 0.3);
+}
+.like {
+  border-radius: 50%;
+  padding: 15px;
+  background: #2f15a2;
+  box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.deslike:hover {
+  background: #b31483;
+}
+.like:hover {
+  background: #371ab8;
+}
+.nosaw:hover {
+  background: linear-gradient(to right, #b31483, #371ab8);
+}
+
+.loadingContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content;
+  justify-items: center;
+  margin-top: 80px;
+  gap: 10px;
+}
+
+.loadingTitulo {
+  color: white;
+  font-size: 6rem;
+}
+
+.loadingSub {
+  color: white;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+}
+
+.divUm {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.loading {
+  margin-top: 40px;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #45136ed8;
+  border-top: 10px solid #cf19cf;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 950px) {
+  .avaliar h2 {
+    font-size: 3rem;
+    width: fit-content;
+    max-width: 12ch;
+  }
+  .loadingTitulo {
+    font-size: 5rem;
+  }
+  .loadingSub {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .loadingContainer {
+    margin-top: 20px;
+  }
+  .divUm {
+    display: grid;
+    align-items: 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  .loadingTitulo {
+    text-align: center;
+  }
+  .loadingSub {
+    font-size: 2.5rem;
+  }
+
+  .quadrado img {
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 0px 0px 8px #7a0cc3;
+  }
+
+  .deslike img,
+  .like img {
+    width: 64px;
+    height: 63px;
+  }
+
+  .nosaw {
+    width: 110px;
+    height: 110px;
+  }
+
+  .container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .avaliar h2 {
+    font-size: 3rem;
+    width: fit-content;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .quadrado img {
+    width: 180px;
+    height: 270px;
+  }
+  .avaliar h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .loadingContainer {
+    margin-top: 40px;
+  }
+  .loadingTitulo {
+    font-size: 4rem;
+  }
+  .loadingSub {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .avaliar h2 {
+    font-size: 2.2rem;
+    width: fit-content;
+    max-width: 400px;
+  }
+  .deslike img,
+  .like img {
+    width: 64px;
+    height: 63px;
+  }
+
+  .nosaw {
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .deslike img,
+  .like img {
+    width: 51px;
+    height: 50px;
+  }
+
+  .nosaw {
+    width: 90px;
+    height: 90px;
+    font-size: 1.5rem;
+  }
+}

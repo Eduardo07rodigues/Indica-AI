@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.homeContainer {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  gap: 80px;
+}
+
+.textos {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  align-content: center;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.homeSub {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 7rem;
+  color: #bfbfbf;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.homeTitle {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 8rem;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.iconeImg {
+  width: 350px;
+}
+
+.escolhas {
+  margin-top: 40px;
+  display: grid;
+  justify-items: center;
+}
+
+.generos {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #470566;
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.5);
+  gap: 30px;
+  border-radius: 5px;
+}
+
+button {
+  text-decoration: none;
+  font-style: none;
+  color: #860e91;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  text-shadow: 0px 0px 10px #b20bff;
+}
+.ativo {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.comecar {
+  font-size: 1.8rem;
+  background-color: #7716af;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+  .iconeImg {
+    display: none;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .intro {
+    margin-top: 10px;
+  }
+  .textos {
+    margin-top: 0;
+  }
+  .escolhas {
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .homeSub {
+    font-size: 5.5rem;
+    font-weight: 400;
+  }
+
+  .homeTitle {
+    font-size: 6rem;
+  }
+  .generos {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    background: #470566;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.5);
+    gap: 35px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .homeSub {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+  .homeTitle {
+    font-size: 4rem;
+  }
+}

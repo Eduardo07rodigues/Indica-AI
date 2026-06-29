@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+body {
+  background: linear-gradient(#411894, #63008b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.titulos {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  line-height: 1;
+}
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
