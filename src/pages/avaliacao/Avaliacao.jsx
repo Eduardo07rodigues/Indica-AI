@@ -9,7 +9,7 @@ import { recomendarFilmes } from "../../APIs/Gemini";
 import { useRef } from "react";
 
 const Avaliacao = () => {
-  // const location = useLocation();
+  // const location = useLocacdtion();
   const genero = localStorage.getItem("genero");
   const navigate = useNavigate();
   const jaBuscou = useRef(false);
