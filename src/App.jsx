@@ -13,6 +13,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
         <Route path="/avaliacao" element={<Avaliacao />} />
         <Route path="/indicacao" element={<Indicacao />} />
       </Routes>
